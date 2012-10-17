@@ -1,10 +1,11 @@
 # Some handy NSUserDefaults marcos
 
-This macros make it easy to store, fetch and observe objects in the `NSUserDefaults`. I first discovered this macros in [kod]() and now use it in [Justnotes]() as well.
+This macros make it easy to store, fetch and observe values in the `NSUserDefaults`. I first discovered this macros in [kod]() and now use it in [Justnotes]() as well.
 
 ### Show me some code.
 
 Alright. How did you register default values the old way?
+
 	NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
 	NSDictionary *defaults = [NSDictionary dictionaryWithObjectsAndKeys: @"brutella@github.com", @"user/email"];
 	[standardUserDefaults registerDefaults:defaults]
