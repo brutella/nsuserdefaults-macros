@@ -1,6 +1,6 @@
 # Some handy NSUserDefaults marcos
 
-This macros make it easy to store, fetch and observe values in the `NSUserDefaults`. I first discovered this macros in [kod](https://github.com/rsms/kod/blob/master/src/kconf.h) and now use it in [Justnotes](http://selfcoded.com/justnotes) as well.
+This macros make it easy to store, fetch and observe values in the `NSUserDefaults`. I first discovered this macros/functions in [kod](https://github.com/rsms/kod/blob/master/src/kconf.h) and now use it in [Justnotes](http://selfcoded.com/justnotes) as well.
 
 ### Show me some code.
 
