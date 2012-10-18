@@ -27,6 +27,6 @@ Isn't that nice and much shorter? Let's take a look at more examples.
 
 What's also nice is that you can observe a value and get a callback when it changed.
 
-	defaults_observe_object(@"user/email", ^(NSString *email){
+	defaults_observe(@"user/email", ^(NSString *email){
         ...
     });
