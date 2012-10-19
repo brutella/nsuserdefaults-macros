@@ -1,6 +1,6 @@
-# Some handy NSUserDefaults marcos
+# Some handy NSUserDefaults helper
 
-This macros make it easy to store, fetch and observe values in the `NSUserDefaults`. I first discovered this macros/functions in [kod](https://github.com/rsms/kod/blob/master/src/kconf.h) and now use it in [Justnotes](http://selfcoded.com/justnotes) as well.
+This helper make it easy to store, fetch and observe values in the `NSUserDefaults`. I first discovered them in [kod](https://github.com/rsms/kod/blob/master/src/kconf.h) and now use it in [Justnotes](http://selfcoded.com/justnotes) as well.
 
 ### Show me some code.
 
@@ -17,8 +17,8 @@ Now, do it the easy way.
 Isn't that nice and much shorter? Let's take a look at more examples.
 	
 	// Set
-    defaults_set_object(@"user/username", @"Matthias");
-    defaults_set_object(@"user/logged-in", @(YES));
+  defaults_set_object(@"user/username", @"Matthias");
+  defaults_set_object(@"user/logged-in", @(YES));
 	
 	// Get
 	NSString *email = defaults_object(@"user/email");
@@ -27,6 +27,9 @@ Isn't that nice and much shorter? Let's take a look at more examples.
 
 What's also nice is that you can observe a value and get a callback when it changed.
 
-	defaults_observe(@"user/email", ^(NSString *email){
+    defaults_observe(@"user/email", ^(NSString *email){
         ...
     });
+
+### Unit Tests
+The shell script `run_unit_tests` includes some basic unit tests. You can run them by executing `sh run_unit_tests` and without involving Xcode.

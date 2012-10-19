@@ -1,0 +1,10 @@
+echo "Building..."
+clang unit_tests.m -framework Cocoa -o unit_tests.m.out
+
+echo "Running..."
+./unit_tests.m.out
+
+echo "Cleaning up..."
+rm ./unit_tests.m.out
+
+echo "Done"
