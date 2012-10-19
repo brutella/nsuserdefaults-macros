@@ -17,8 +17,8 @@ Now, do it the easy way.
 Isn't that nice and much shorter? Let's take a look at more examples.
 	
 	// Set
-  defaults_set_object(@"user/username", @"Matthias");
-  defaults_set_object(@"user/logged-in", @(YES));
+    defaults_set_object(@"user/username", @"Matthias");
+    defaults_set_object(@"user/logged-in", @(YES));
 	
 	// Get
 	NSString *email = defaults_object(@"user/email");
